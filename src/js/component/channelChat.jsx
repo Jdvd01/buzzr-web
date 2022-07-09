@@ -58,6 +58,7 @@ const ChannelChat = () => {
             <div>
                 <Helmet title={params.name}>
                     <style>{'body {background-color: rgba(33,37,41);}'}</style>
+                    <style>{'footer {color: white;}'}</style>
                 </Helmet>
 
                 <div className="channel_title">

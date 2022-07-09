@@ -21,9 +21,7 @@ export const Home = () => {
     <>
       {store.token == "" ? (
         <div>
-          <Helmet title="BuzzrApp">
-            <style>{"body {background-color: white;}"}</style>
-          </Helmet>
+          <Helmet title="BuzzrApp"></Helmet>
           <div className="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
             <div className="col-md-5 p-lg-5 mx-auto my-5">
               <h1 className="display-4 font-weight-normal">BuzzrApp</h1>
@@ -67,57 +65,7 @@ export const Home = () => {
                 </p>
               </div>
               <div className="col-md-5">
-                <svg
-                  className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-                  width="500"
-                  height="500"
-                  xmlns="http://www.w3.org/2000/svg"
-                  role="img"
-                  aria-label="Placeholder: 500x500"
-                  preserveAspectRatio="xMidYMid slice"
-                  focusable="false"
-                >
-                  <title>Placeholder</title>
-                  <rect width="100%" height="100%" fill="#eee"></rect>
-                  <text x="50%" y="50%" fill="#aaa" dy=".3em">
-                    500x500
-                  </text>
-                </svg>
-              </div>
-            </div>
-
-            <hr className="featurette-divider" />
-
-            <div className="row featurette">
-              <div className="col-md-7 order-md-2">
-                <h2 className="featurette-heading fw-normal lh-1">
-                  Buzzr <span className="text-muted">See it for yourself.</span>
-                </h2>
-                <p className="lead">
-                  Lorem ipsum dolor sit amet, consectetur adip sed do eiusmod
-                  tempor incididunt ut labore et dol lorem ipsum dolor. Lorem
-                  ipsum dolor Lorem lorem ipsum Lorem ipsum dolor sit amet,
-                  consectetur adip sed do eiusmod tempor incididunt ut labore et
-                  dol lorem ipsum dolor. Lorem ipsum dolor Lorem lorem ipsum.
-                </p>
-              </div>
-              <div className="col-md-5 order-md-1">
-                <svg
-                  className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-                  width="500"
-                  height="500"
-                  xmlns="http://www.w3.org/2000/svg"
-                  role="img"
-                  aria-label="Placeholder: 500x500"
-                  preserveAspectRatio="xMidYMid slice"
-                  focusable="false"
-                >
-                  <title>Placeholder</title>
-                  <rect width="100%" height="100%" fill="#eee"></rect>
-                  <text x="50%" y="50%" fill="#aaa" dy=".3em">
-                    500x500
-                  </text>
-                </svg>
+                <img src="https://picsum.photos/id/201/500/500" />
               </div>
             </div>
 

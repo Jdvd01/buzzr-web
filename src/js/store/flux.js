@@ -64,12 +64,11 @@ const getState = ({ getStore, getActions, setStore }) => {
 				const store = getStore()
 				const actions = getActions()
 				if (email.trim() == "" || password.trim() == "" || nombre.trim() == "" || apellido.trim() == "" || username.trim() == "") {
-					alert('Debe llenar todos los campos')
-					console.log("Debe llenar todos los campos")
+					alert('All fields are required')
 				}
 				else {
 					if (actions.checkEmail(email) == false) {
-						return alert("correo invalido")
+						return alert("Invalid email")
 					}
 					else {
 						let data = {

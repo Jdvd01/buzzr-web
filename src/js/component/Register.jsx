@@ -66,7 +66,7 @@ const Register = () => {
 									/>
 								</div>
 								<div className="mb-3">
-									<label htmlFor="exampleInputEmail1" className="form-label login-title">Nombre:</label>
+									<label htmlFor="exampleInputEmail1" className="form-label login-title">Name:</label>
 									<input
 										type="text"
 										className="input-login-register"
@@ -78,7 +78,7 @@ const Register = () => {
 									/>
 								</div>
 								<div className="mb-3">
-									<label htmlFor="exampleInputEmail1" className="form-label login-title">Apellido:</label>
+									<label htmlFor="exampleInputEmail1" className="form-label login-title">Last Name:</label>
 									<input
 										type="text"
 										className="input-login-register"

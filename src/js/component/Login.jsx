@@ -1,20 +1,27 @@
-import React, {useState, useContext} from 'react';
+import React, { useState, useContext } from 'react';
 import { Context } from "./../store/appContext";
 import { useNavigate } from "react-router";
 
 const Login = () => {
 
     let navegar = useNavigate()
-    const { actions } = useContext(Context)
+    const { actions, store } = useContext(Context)
 
-	const [login, setLogin] = useState({
-		email: "",
-		password: ""
-	})
+    const [login, setLogin] = useState({
+        email: "",
+        password: ""
+    })
 
-    const handleRedirect = async () =>{
-        actions.handleLogin(login)
-        navegar("/channelchat/Welcome")
+    const handleRedirect = async () => {
+        if (login.email != "" || login.password != "") {
+            actions.handleIsLogin()
+            actions.handleLogin(login)
+            if(store.isLogin) {
+                navegar("/channelchat/Welcome")
+            }
+        } else {
+            alert("Something is wrong, try again")
+        }
     }
 
     return (
