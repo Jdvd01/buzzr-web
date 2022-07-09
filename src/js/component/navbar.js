@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { Context } from "../store/appContext.js";
 import { useNavigate } from "react-router";
-import buzzrLogo from "../../../docs/assets/Buzzr.png"
+import buzzrLogo from "../../assets/buzzr.png"
 
 import CreateChannel from "./createChannel.jsx";
 
